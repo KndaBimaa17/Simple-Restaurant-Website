@@ -96,3 +96,23 @@ closeBtn.addEventListener("click", function () {
   popup.style.display = "none";
 });
 // POP UP END
+
+// email validation start
+document.addEventListener("DOMContentLoaded", function () {
+  const form = document.querySelector(".contact-wrap form");
+  const emailInput = document.getElementById("email");
+
+  function validateEmail(email) {
+    const re = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    return re.test(String(email).toLowerCase());
+  }
+
+  form.addEventListener("submit", function (event) {
+    const email = emailInput.value.trim();
+    if (!validateEmail(email)) {
+      event.preventDefault();
+      alert("Please enter a valid email address.");
+    }
+  });
+});
+// email validation ends

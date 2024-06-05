@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Restaurant's Website</title>
+    <title>Restaurant Rumah Nenek</title>
     <link rel="stylesheet" href="style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -38,16 +38,10 @@
 
         <div class="navbar-nav" active>
           <a href="#">Home</a>
-          <a href="#about">About Us</a>
+          <a href="#about">About</a>
           <a href="#menu">Menu</a>
           <a href="#reviews">Reviews</a>
-          <a href="#contact">Contact Us</a>
-        </div>
-
-        <div class="navbar-clock">
-          <div id="clock">
-            <p id="date-time"></p>
-          </div>
+          <a href="#contact">Contact</a>
         </div>
       </nav>
     </header>
@@ -178,17 +172,18 @@
             </div>
             <!-- Add more menu items as needed -->
           </div>
-          <div class="menu-desc-2">
-            <p >KLIK TOMBOL DIBAWAH UNTUK MELIHAT MENU LENGKAP RESTAURANT RUMAH NENEK</p>
-          </div>
-          <a href="./html/menu.html" target="_blank" rel="noopener noreferrer">Menu Lengkap</a>
+          <a href="./html/menu.html" target="_blank" rel="noopener noreferrer"
+            >Complete Menu</a
+          >
         </div>
       </section>
 
       <!-- Reviews Section -->
       <section id="reviews">
         <div class="reviews-wrap">
-          <h2>What <span>our cutomers</span> say</h2>
+          <h2>What <span>our customers</span> say</h2>
+
+          <!-- Review Item 1 -->
           <div class="review-item">
             <p>
               "The food was absolutely wonderful, from preparation to
@@ -198,6 +193,8 @@
             </p>
             <span>- John Doe</span>
           </div>
+
+          <!-- Review Item 2 -->
           <div class="review-item">
             <p>
               "Had a fantastic dining experience. The staff was attentive and
@@ -205,24 +202,57 @@
             </p>
             <span>- Jane Smith</span>
           </div>
-          <!-- Add more reviews as needed -->
+
+          <!-- Review Item 3 -->
+          <div class="review-item">
+            <p>
+              "A wonderful atmosphere with incredible service. The dishes were
+              beautifully presented and tasted exquisite."
+            </p>
+            <span>- Michael Brown</span>
+          </div>
+
+          <!-- Review Item 4 -->
+          <div class="review-item">
+            <p>
+              "Exceptional quality and a great variety of dishes. The ambiance
+              was perfect for our evening."
+            </p>
+            <span>- Lisa White</span>
+          </div>
+
+          <!-- Review Item 5 -->
+          <div class="review-item">
+            <p>
+              "I was impressed by the attention to detail in every aspect of the
+              dining experience. A true culinary gem!"
+            </p>
+            <span>- David Johnson</span>
+          </div>
         </div>
       </section>
 
       <!-- Contact Section -->
-      <section id="contact" class="contact-form">
-        <h2>Contact Us</h2>
-        <form action="https://formspree.io/f/xgegjvpd" method="POST">
-          <input type="text" name="name" placeholder="Your Name" required />
-          <input type="email" name="email" placeholder="Your Email" required />
-          <textarea
-            name="message"
-            placeholder="Your Message"
-            rows="4"
-            required
-          ></textarea>
-          <button type="submit">Send Message</button>
-        </form>
+      <section id="contact">
+        <div class="contact-wrap">
+          <h2>For Business Inquiries, <span>Contact Us!</span></h2>
+          <form action="https://formspree.io/f/xgegjvpd" method="POST">
+            <input type="text" name="name" placeholder="Your Name" required />
+            <input
+              type="email"
+              name="email"
+              placeholder="Your Email"
+              required
+            />
+            <textarea
+              name="message"
+              placeholder="Your Message"
+              rows="4"
+              required
+            ></textarea>
+            <button type="submit">Send Message</button>
+          </form>
+        </div>
       </section>
     </main>
     <!-- SCROLL BUTTON -->
@@ -247,12 +277,15 @@
     <div id="popup" class="popup">
       <div class="popup-content">
         <div class="profile">
-          <img src="./assets/img/img-1.jpg" alt="Profile Photo" />
-          <h2>John Doe</h2>
+          <img src="./assets/img/img-1.png" alt="techi`s photo" />
+          <h2>Developed by ndaa</h2>
           <p>
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Esse
-            deleniti ut incidunt reprehenderit atque maxime assumenda minus
-            praesentium quibusdam ex, ducimus obcaecati culpa asperiores.
+            For Business Inquiries, feel free to reach me at My Personal
+            Website: <a
+              href="https://github.com/KndaBimaa17"
+              target="_blank"
+              rel="noopener noreferrer"
+            >https://github.com/KndaBimaa17</a>
           </p>
         </div>
         <button id="closeBtn">Close</button>

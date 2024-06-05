@@ -17,7 +17,7 @@ body {
 #hero {
   width: 100%;
   min-height: 100vh;
-  background-color: rgb(255, 145, 164);
+  background-color: rgb(255, 255, 255);
 }
 
 .hero-wrap {
@@ -31,7 +31,7 @@ body {
   display: inline-flex;
   gap: 160px;
   font-size: 2rem;
-  background-color: pink;
+  background-color: #e2e2e2;
   width: 100%;
   padding: 4rem;
   border-radius: 20px;
@@ -40,13 +40,14 @@ body {
 .welcome-msg {
   text-align: center;
   font-size: 4rem;
-  color: rgb(228, 37, 69);
+  color: #00366b;
   font-weight: 900;
   padding: 2.5rem 0;
 }
 
 .welcome-msg span {
-  color: gold;
+  font-style: italic;
+  text-shadow: 1px 2px 3px rgb(19, 153, 255);
 }
 
 .minuman-class {
@@ -93,4 +94,20 @@ img {
 .list-menu ul li,
 .list-menu ol li {
   margin-top: 50px;
+}
+
+.back-cta {
+  padding: 1rem 2rem;
+  background-color: #00366b;
+  color: #ffff;
+  border-radius: 10px;
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  z-index: 10;
+}
+
+.back-cta:hover {
+  background-color: #00366b97;
+  color: #949494;
 }
